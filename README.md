@@ -96,9 +96,6 @@
 1. 开发环境
 - 嵌入式编程：Keil MDK（STM32）、STM32CubeMX（配置外设）、Arduino IDE（舵机控制）。
 - 图像处理：OpenMV IDE（集成图像识别库，如矩形检测、色块追踪）。
-2. 算法实现
-- PID库：自定义或调用开源库实现电机控制。
-- 图像处理算法：基于OpenMV的阈值分割、角点检测（如find_blobs()函数）。
 3. 调试工具
 - 上位机软件：通过串口助手（如CoolTerm）实时监控数据。
 - 波器与逻辑分析仪：用于验证电机控制信号及通信时序
@@ -117,11 +114,6 @@
 ## 四、软件工具链
 1. 开发环境
 - 嵌入式编程：Keil MDK（STM32开发）、STM32CubeMX（外设配置）、Arduino IDE（辅助调试）。
-- 算法仿真：MATLAB/Simulink（验证FFT、滤波算法）、Python（数据拟合与可视化）。
-2. 关键算法库
-- FFT库：STM32的DSP库（如ARM CMSIS-DSP）用于实时频谱分析。
-- 数字滤波器：基于FIR/IIR的滤波算法，优化计算效率以适应实时性要求。
--  通信协议：SPI/I2C（控制继电器）、UART（数据传输与调试）。
 3. 调试工具
 - 上位机软件：串口助手（如CoolTerm）、波形显示工具（如LabVIEW）。
 - 逻辑分析仪：验证时序与信号完整性（如Saleae Logic Pro 8）。
